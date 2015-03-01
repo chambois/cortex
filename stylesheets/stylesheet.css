@@ -501,6 +501,14 @@ header h1 {
   letter-spacing: -1px;
 }
 
+header h1 a {
+  color: #fff;
+}
+
+header h1 a:hover {
+  color: #fff;
+}
+
 header h2 {
   width: 540px;
   margin-top: 0;
