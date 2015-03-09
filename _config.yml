@@ -1,1 +1,3 @@
 baseurl: http://www.cortex.com.au 
+sass:
+  sass_dir: _sass
