@@ -38,9 +38,10 @@ a:hover {
 }
 
 header {
-  padding-top: 40px;
-  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
-  border-bottom: solid 1px #275da1;
+  padding-top: 20px;
+  background: #000;
+  border-bottom: solid 5px #777;
+  opacity: 0.7;
 }
 
 header:after {
@@ -49,8 +50,17 @@ header:after {
   clear: both;
 }
 
+#logo {
+  max-width: 180px;
+}
+
+nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(99% - 180px);
+}
+
 nav ul {
-  float: right;
   font-size: 18px;
 }
 
@@ -124,6 +134,13 @@ hr {
 
 img {
   max-width: 100%;
+}
+
+.hero-banner {
+  img {
+    margin-top: -100px;
+    width: 100%;
+  }
 }
 
 table {
@@ -314,9 +331,6 @@ footer a:hover {
 @media only screen and (max-width: 767px) {
   .inner {
     width: 93%;
-  }
-  header {
-    padding: 20px 0;
   }
   header .inner {
     position: relative;
