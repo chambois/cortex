@@ -3,3 +3,4 @@ _site
 node_modules
 *.swn
 bower_components
+.rvm

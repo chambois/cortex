@@ -2,18 +2,33 @@
 ---
 
 @import "normalise";
-@import "griddle/griddle";
-@include griddle-build(2 3 4);
+@import "../bower_components/susy/sass/susy";
 
-.grid {
-  max-width: 960px;
-  margin: 0 auto;
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  container: 960px,
+  container-position: center,
+  box-sizing: border-box
+);
 
-  & .-right {
-    text-align: right;
-  }
+.container {
+  @include container;
+  padding: 0 20px;
 }
 
+.content {
+  @include span(10);
+  @include squish(1);
+}
+
+@include susy-breakpoint(600px) {
+  .card { @include gallery(6 of 12); }
+}
+
+@include susy-breakpoint(720px) {
+  .card { @include gallery(4 of 12); }
+}
 
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, serif;
@@ -419,10 +434,12 @@ footer a:hover {
     @include hover-effect;
   }
 
-  background: #777;
-  color: #f2f2f2;
-  margin-top: 25px;
-  text-align: center;
+  div {
+    background: #777;
+    color: #f2f2f2;
+    margin-top: 25px;
+    text-align: center;
+  }
 
   h3 {
     font-size: 16px;

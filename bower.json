@@ -1,0 +1,16 @@
+{
+  "homepage": "https://github.com/chambois/cortex",
+  "authors": [
+    "Matt Chamberlain <mchamber@thoughtworks.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.2"
+  }
+}
