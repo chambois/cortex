@@ -1,0 +1,43 @@
+nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(99% - 180px);
+
+  ul {
+    font-size: 18px;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+    padding: 6.25px 12.5px;
+  }
+
+  li a {
+    color: white;
+    display: inline-block;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:hover,
+    &:focus {
+      color: white;
+      opacity: 0.8;
+      -webkit-transform: translate(0px, -2px);
+      -moz-transform: translate(0px, -2px);
+      -ms-transform: translate(0px, -2px);
+      transform: translate(0px, -2px);
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  nav ul {
+    float: none;
+  }
+  nav li {
+    display: block;
+  }
+}

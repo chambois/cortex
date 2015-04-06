@@ -1,0 +1,8 @@
+
+@mixin hover-effect {
+  opacity: 0.8;
+  -webkit-transform: translate(0px, -2px);
+  -moz-transform: translate(0px, -2px);
+  -ms-transform: translate(0px, -2px);
+  transform: translate(0px, -2px);
+}

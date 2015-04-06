@@ -1,0 +1,14 @@
+
+@import "susy";
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  container: 960px,
+  container-position: center,
+  box-sizing: border-box
+);
+
+$dark-grey: #666;
+$med-grey: #777;
+$light-grey: #aaa;
