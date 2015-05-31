@@ -30,3 +30,11 @@
 @include susy-breakpoint(720px) {
   .card { @include gallery(4 of 12); }
 }
+
+.gallery {
+  &:after {
+    display: block;
+    content: "";
+    clear:both
+  }
+}

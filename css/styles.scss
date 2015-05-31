@@ -24,6 +24,13 @@ a {
   text-decoration: none;
 }
 
+a[href$='.pdf'] {
+  &:after {
+    font-family: FontAwesome;
+    content: " \f1c1";
+  }
+}
+
 .hero-banner {
   img {
     margin-top: -100px;
